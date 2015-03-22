@@ -1,1 +1,5 @@
-
+The variables that are included in the tidy data set are:
+- measurements: lables the type of measurements that corresponds to the mean value
+- activity_name: the name of the activity measured (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+- subject: the code for the subject, which ranges from 1 to 30
+- mean(value): the average of each measurement by activity by subject
