@@ -1,1 +1,8 @@
 # coursera-getdata-012
+The script "run_analysis.R" includes the all the necessary steps to get the raw data set and to produce a tidy data. The script is organzied in the following blocks:
+- Step 0 Preparation: running this part of the script will download the datasets and unzip them into the specified sub-folder in the WD, and then load the datasets into R and label the columns according to the descriptive names in the file features.txt in the data set (this satisfies the requirement #4 of the instructions)
+- Step 1 Merge the data sets: running this part of the script will product a single data set containing the "test" and "train" data (this satisfies the requirement #1 of the instructions)
+- Step 2 Extract the measurements on the mean & standard deviation: using "select" from dplyr and regular expression searching for variabes on "[Mm]ean" and "std", this part of the script selects only the variables of interest (this satisfies the requirement #2 of the instructions)
+- Step 3 Use descriptive activity names to name the activities in the data set: this part of the script merges the activity names with the selected data based on the activity code and then drops the activity code (this satisfies the requirement #3 of the instructions)
+- Step 4 Appropriately label the data set with descriptive variable names: Already carried out when importing the data sets(step 0). The dataframe "data_selected" has descriptive column names
+- Setp 5 Create a second, independent tidy data set: this final part tidies the data set using "gather" in tidyr, groups the tidy data set and then calculates the average.
